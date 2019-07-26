@@ -1,0 +1,10 @@
+{
+    "terminal.integrated.shell.windows": "cmd.exe",
+
+    "terminal.integrated.env.windows": {
+    "CMDER_ROOT": "E:\\utils\\cmder_mini"
+    },
+    "terminal.integrated.shellArgs.windows": [
+      "/k E:\\utils\\cmder_mini\\vendor\\init.bat"
+    ],
+}
