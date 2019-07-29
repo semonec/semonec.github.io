@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://semonec.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://semonec.github.io/" rel="alternate" type="text/html" /><updated>2019-07-26T15:27:12+09:00</updated><id>https://semonec.github.io/feed.xml</id><title type="html">Moon</title><subtitle>Moon is a minimal, one column jekyll theme for your blog.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://semonec.github.io/Re-organize-with-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-07-26T11:49:00+09:00</published><updated>2019-07-26T11:49:00+09:00</updated><id>https://semonec.github.io/Re-organize-with-jekyll</id><content type="html" xml:base="https://semonec.github.io/Re-organize-with-jekyll/">&lt;h1 id=&quot;how-to-organize-jekyll-environment-in-windows&quot;&gt;How to Organize Jekyll environment in Windows.&lt;/h1&gt;
+
+&lt;h3 id=&quot;first-posting-with-jekyll-at-github-pages&quot;&gt;First posting with Jekyll at Github Pages&lt;/h3&gt;
+
+&lt;p&gt;Even though I used with hexo, almost merly not updated it.
+So, re-organize with Jekyll and write posts as much well.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Quiet tired process, so just write down, and once again  just follow it.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download RubyInstaller from https://rubyinstaller.org/downloads/&lt;/p&gt;
+
+    &lt;p&gt;Download it with DevKit version&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/07/26/5d3a6b7ea857329102.png&quot; alt=&quot;ruby_site.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install that downloaded&lt;/p&gt;
+
+    &lt;p&gt;just follow up. default settings&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install jekyll&lt;/p&gt;
+
+    &lt;p&gt;In my case, I make &lt;b&gt;C:\jekyll&lt;/b&gt; directory for download&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;
+ cd C:\&lt;br /&gt;
+ mkdir jekyll&lt;br /&gt;
+ cd jekyll&lt;br /&gt;
+ gem install jekyll &lt;br /&gt;
+ &lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install additiol gem’s&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;
+ gem install minima &lt;br /&gt;
+ gem install bundler &lt;br /&gt;
+ gem install jekyll-feed &lt;br /&gt;
+ gem install tzinfo-data
+ &lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now you can make a jekyll workspace like&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;
+ cd &lt;WORKSPACE_WHEREVER_YOU_WANNA&gt; &lt;br /&gt;
+ jekyll new .
+ &amp;lt;/code&amp;gt;&lt;/WORKSPACE_WHEREVER_YOU_WANNA&gt;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Created! Now it’s time to serve&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;
+ jekyll serve
+ &lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;After then, you can see blog by accessing to http://127.0.0.1:4000&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;useful-tips-while-posting&quot;&gt;Useful tips while posting&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Install &lt;a href=&quot;https://github.com/PicGo/vs-picgo&quot;&gt;PicGo&lt;/a&gt; which can post images easily.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to Organize Jekyll environment in Windows.</summary></entry></feed>
