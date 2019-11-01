@@ -31,7 +31,6 @@ It's quite important manage de-reference of unused variables, objects.
 
 ### Handle multiple async ###
 
-ex)
 ~~~javascript
 let fn1 = (cb) => { setTimeout(() => { console.log("10"); cb(); }, 10); };
 let fn2 = (cb) => { setTimeout(() => { console.log("50"); cb(); }, 50); };
@@ -85,3 +84,5 @@ function printParallel(fns) {
   Promise.all(promises).then(done);
 }
 ~~~
+
+You can check by live [HERE](https://coderpad.io/DQHF4GEZ)
