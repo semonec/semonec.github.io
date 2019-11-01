@@ -2,7 +2,9 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2019-07-26 11:49:00 +0900
-categories: Post
+categories: Jekyll
+tag:
+- jekyll
 comments: true
 ---
 
