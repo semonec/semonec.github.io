@@ -42,7 +42,7 @@ comments:
 markdown: kramdown
 # theme: minima
 remote_theme: "mmistakes/minimal-mistakes@4.17.2"
-
+minimal_mistakes_skin: "mint"
 
 # Outputting
 paginate: 5 # amount of posts to show
@@ -83,7 +83,7 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/semonec"
-
+  
 defaults:
   # _posts
   - scope:
@@ -95,7 +95,9 @@ defaults:
       read_time: true
       comments: true
       share: true
-      related: true
+      related: true  
+      sidebar:
+        nav: "docs"
   # _pages
   - scope:
       path: "_pages"
@@ -104,6 +106,20 @@ defaults:
       layout: single
       author_profile: true
       comments: true
+      sidebar:
+        nav: "docs"
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
+
 category_archive:
   type: liquid
   path: /categories/
@@ -132,3 +148,4 @@ repository: semonec/semonec.github.io
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+

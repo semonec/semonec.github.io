@@ -1,8 +1,26 @@
 ---
 permalink: /about/
 title: "About"
+comments: false
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+# Semoon Park #
+
+10+ years experienced software engineer
+Front-end/ UI / Gaming industry engineer.
+Prior Android/WebKit/Chromium Engineer.
+
+## Languages ##
+
+C/C++/Javascript/Typescript
+React.js/redux/Node.js
+
+
+## Contribution ##
+
+- Android Open Source Project, Code aurora foundation (2009 ~ 2013)
+- OMTP BONDI, JIL, WAC Specification, Test suites (2010 ~ 2011)
+- NodeGUI studying (current)
+
+E-mail: semonec@gmail.com
