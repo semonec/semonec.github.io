@@ -98,7 +98,7 @@ tag_archive:
   type: liquid
   path: /tags/
 
-repository: semonec/blog-comment
+repository: semonec/semonec.github.io
 
 # Exclude from processing.
 # The following items will not be processed, by default.
