@@ -1,9 +1,9 @@
 ---
 title:  "Next.js with Typescript + redux"
 date:   2019-11-03 11:49:00 +0900
-categories: Jekyll
+categories: React
 tag:
-- jekyll
+- React
 ---
 
 We'll talk about Server-side-rendering (SSR) with Next.js
