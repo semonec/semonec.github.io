@@ -5,7 +5,9 @@ categories: REACT
 tag:
 - REACT
 ---
-# react_redux_hooks_study with typescript
+
+React & redux & Hook with typescript
+
 
 [Refs](https://velog.io/@velopert/use-typescript-and-redux-like-a-pro)
 
@@ -760,3 +762,9 @@ export default TodoItem;
 2. <b>Always</b> module's action creator `export` as function
 3. <b>Always</b> bring action type formed as `npm-module-orr-app/reducer/ACTION_TYPE` 
 4. <b>Maybe</b> action types `export` as `UPPER_SNAKE_CASE`
+
+
+
+## Source code ##
+
+You can see the source codes which are used here [https://github.com/semonec/react_redux_hooks_study](https://github.com/semonec/react_redux_hooks_study)
