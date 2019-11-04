@@ -7,8 +7,7 @@ tag:
 - minimal-mistake
 - theme
 ---
-
-# Applying Remote theme to Jekyll
+Jekyll blog with remote theme
 
 You can find <b>free</b> Jekyll themes [HERE!](https://jekyllthemes.io/free)
 

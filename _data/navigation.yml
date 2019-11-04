@@ -9,7 +9,13 @@ main:
     url: /categories/
 
 docs:
-  - title: Documents
+  - title: Study
     children:
-      - title: "React redux hooks"
-        url: "/react_redux_hooks_study"
+      - title: "React"
+        url: "/categories/#react"
+      - title: "Algorithm"
+        url: ""
+      - title: "Jekyll"
+        url: "/categories/#jekyll"
+  - title: Biography
+  
