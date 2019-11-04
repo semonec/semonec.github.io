@@ -1,9 +1,9 @@
 ---
 title:  "React Redux Hooks with Typescript"
 date:   2019-11-02 11:49:00 +0900
-categories: REACT
+categories: React
 tag:
-- REACT
+- React
 ---
 
 React & redux & Hook with typescript
