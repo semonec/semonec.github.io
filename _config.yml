@@ -68,19 +68,19 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://semonec.github.io"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/semonec"
     - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/semoon/"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/semonec"
 
 footer:
   links:
-    - label: "GitHub"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/semoon/"
-    - label: "LinkedIn"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/semonec"
 
