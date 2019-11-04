@@ -4,6 +4,8 @@ date:   2019-10-30 07:49:00 +0900
 categories: Jekyll
 tag:
 - jekyll
+- minimal-mistake
+- theme
 ---
 
 # Applying Remote theme to Jekyll

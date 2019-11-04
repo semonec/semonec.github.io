@@ -1,10 +1,14 @@
 ---
-layout: post
 title:  "Interview retrospect - Frontend Engineer"
 date:   2019-11-01 07:49:00 +0900
-categories: Post
+categories: Interview
+tag:
+  - Interview
+  - coding test
+  - Javascript
 comments: true
 ---
+Intreview retrospect of Javascript engineer
 
 # Interview retrospect
 
