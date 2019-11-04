@@ -2,7 +2,7 @@
 layout: single
 title:  "Adding GitHub pages comment system with utteranc"
 categories: 
-    - posts
+    - Jekyll
 tag:
     - jekyll
     - jekyll-101
@@ -10,7 +10,7 @@ published: true
 ---
 Add comments area into jekyll blog.
 Use utterance comments opensource.
- 
+
 [Refs](https://utteranc.es/)
 
 ## Pros ##

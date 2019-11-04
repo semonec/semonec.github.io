@@ -12,11 +12,45 @@ a {
     text-decoration: none;
 }
 
+/* type scale */
+$type-size-2 : 1.25em;  // ~31.248px
+$type-size-3 : 1em;  // ~25.008px
+$type-size-4 : 1em;   // ~20px
+$type-size-5 : 0.75em;      // ~16px
+$type-size-6 : 0.6875em;   // ~12px
+$type-size-7 : 0.625em; // ~11px
+$type-size-8 : 0.625em;  // ~10px
+
+h1{
+    font-size: 1.25em;
+}
+h2{
+    font-size: 1em;
+}
+h3{
+    font-size: .75em;
+}
+h4{
+    font-size: .6875em;
+}
+h5 {
+    font-size: .625em;
+}
+
 .page__content p, .page__content li, .page__content dl { font-size: .75em; }
-.page__content p { margin: 0 0 1.3em; /* sibling indentation*/ }
-.page__content a:not(.btn):not(#goog-wm-sb):hover { text-decoration: underline; }
-.page__content a:not(.btn):not(#goog-wm-sb):hover img { box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
-.page__content dt { margin-top: 1em; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-weight: bold; }
-.page__content dd { margin-left: 1em; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 0.75em; }
-.page__content .small { font-size: .5em; }
-.page__content blockquote + .small { margin-top: -1.5em; padding-left: 1.25rem; }
+
+@media (min-width: 48em) { .grid__item .archive__item-excerpt { display: block; font-size: 0.6875em; } }
+.grid__item .page__meta, .grid__item .comment__date { margin: 0 0 4px; font-size: 0.56em; }
+
+
+.pagination--pager { display: block; padding: 0.5em 1em; float: left; width: 50%; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: .75em; font-weight: bold; text-align: center; text-decoration: none; color: #40514e; border: 1px solid #9b9f9e; border-radius: 4px; }
+
+.btn, #goog-wm-sb { /* default */display: inline-block;margin-bottom: 0.25em;padding: 0.5em 1em;font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;font-size: 0.6875em;font-weight: bold;text-align: center;text-decoration: none;border-width: 0;border-radius: 4px;cursor: pointer; /* button colors */ /* fills width of parent container */ /* disabled */ /* extra large button */ /* large button */ /* small button */}
+.page__meta, .comment__date { margin-top: 2em; color: #40514e; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 0.6875em; }
+.page__taxonomy-item { display: inline-block; margin-right: 3px; margin-bottom: 8px; padding: 3px 10px; text-decoration: none; border: 1px solid #9b9f9e; border-radius: 4px; }
+
+.sidebar p, .sidebar li { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 0.6875em; line-height: 1.5; }
+.author__urls a { display: block; margin-bottom: 3px; padding-right: 5px; padding-top: 1px; padding-bottom: 2px; color: inherit; font-size: .875em; text-decoration: none; }
+
+.page__footer-follow li { display: inline-block; padding-top: 5px; padding-bottom: 5px; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 0.6875em; text-transform: uppercase; }
+.archive__subtitle { margin: 1.414em 0 0; padding-bottom: 0.5em; font-size: .75em; color: #40514e; border-bottom: 1px solid #cfd4d3; }
