@@ -31,6 +31,13 @@ github_username:  semonec
 
 search: true
 
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+
 # Build settings
 markdown: kramdown
 # theme: minima
@@ -119,9 +126,3 @@ repository: semonec/semonec.github.io
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-comments:
-  provider: "utterances"
-  utterances:
-    theme: "github-light" # "github-dark"
-    issue_term: "pathname"
