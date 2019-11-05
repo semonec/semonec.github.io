@@ -131,7 +131,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
 repository: semonec/semonec.github.io
 
 # Exclude from processing.
