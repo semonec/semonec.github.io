@@ -17,5 +17,7 @@ docs:
         url: ""
       - title: "Jekyll"
         url: "/categories/#jekyll"
+      - title: "Interview"
+        url: "/categories/#Interview"
   - title: Biography
   
