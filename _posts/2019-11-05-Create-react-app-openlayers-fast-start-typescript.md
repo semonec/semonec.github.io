@@ -5,6 +5,9 @@ categories: OpenLayers
 tag:
 - OpenLayers
 - React
+toc: true
+toc_label: "Table of contents"
+toc_icon: "file-alt"
 ---
 Organize Create React App with OpenLayers v6.x + typescript
 
@@ -114,9 +117,7 @@ Now, you can see like below
 ![Screenshot](./assets/images/screenshot.png)
 
 
+## Source codes ###
 
-
-
-
-
-https://github.com/semonec/open_layers_study/tree/master/quick_start
+Used source codes are located below 
+[Repository](https://github.com/semonec/open_layers_study/tree/master/quick_start)

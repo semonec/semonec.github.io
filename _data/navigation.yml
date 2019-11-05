@@ -19,5 +19,7 @@ docs:
         url: "/categories/#jekyll"
       - title: "Interview"
         url: "/categories/#Interview"
+      - title: "OpenLayers"
+        url: "/categories/#openlayers"
   - title: Biography
   
