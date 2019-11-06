@@ -49,8 +49,13 @@ h5 {
 .page__meta, .comment__date { margin-top: 2em; color: #40514e; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 0.6875em; }
 .page__taxonomy-item { display: inline-block; margin-right: 3px; margin-bottom: 8px; padding: 3px 10px; text-decoration: none; border: 1px solid #9b9f9e; border-radius: 4px; }
 
-.sidebar p, .sidebar li { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 0.6875em; line-height: 1.5; }
-.author__urls a { display: block; margin-bottom: 3px; padding-right: 5px; padding-top: 1px; padding-bottom: 2px; color: inherit; font-size: .875em; text-decoration: none; }
+.sidebar p, .sidebar li { font-size: 0.6875em; }
+.author__urls a { font-size: .875em;  }
 
-.page__footer-follow li { display: inline-block; padding-top: 5px; padding-bottom: 5px; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 0.6875em; text-transform: uppercase; }
-.archive__subtitle { margin: 1.414em 0 0; padding-bottom: 0.5em; font-size: .75em; color: #40514e; border-bottom: 1px solid #cfd4d3; }
+.page__footer-follow li { font-size: 0.6875em; }
+.archive__subtitle { font-size: .75em; }
+div.highlighter-rouge, figure.highlight { font-size: 0.6875em; }
+
+.toc__menu a {
+    font-size: 1em;
+}
