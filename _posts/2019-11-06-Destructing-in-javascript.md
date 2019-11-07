@@ -84,11 +84,23 @@ div.onclick = function(){
 > Document has *div* element, and 'div' variable would reference that element.
 > *div* element's onclick event listener will refers function object
 
+### Mark-and-sweep algorithm ###
+
+"An object is unreachable"
+From the *roots* object, GC will start from these roots, find all objects, are referenced from the roots.
+Starting from the roots, the garbage collector will thus find all *reachable* objects and collect all *non-reachable* objects.
+
+**Cycles are no longer a problem**
+
+roots cannot reach those objects, describes from upper. so they' wll be cleaned.
+
+## Types of memory leak and how to get rid of them ##
+
 
 
 ## References ##
-- [Memory leak patterns in JavaScript](https://www.ibm.com/developerworks/web/library/wa-memleak/wa-memleak-pdf.pdf)
 - [Memory Management](https://developer.mozilla.org/ko/docs/Web/JavaScript/Memory_Management)
+- ~~[Memory leak patterns in JavaScript](https://www.ibm.com/developerworks/web/library/wa-memleak/wa-memleak-pdf.pdf)~~
 - [4 Types of Memory Leaks in JavaScript and How to Get Rid Of Them](https://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/)
 - [Beyond Memory Leaks in JavaScript
 ](https://medium.com/outsystems-experts/beyond-memory-leaks-in-javascript-d27fd48ae67e)
