@@ -96,7 +96,29 @@ roots cannot reach those objects, describes from upper. so they' wll be cleaned.
 
 ## Types of memory leak and how to get rid of them ##
 
+1. Accldental global variables
+        
+    ```javascript
+    function foo(arg) {
+        bar = "this is a hidden global variable";
+    }
+    ```
 
+    it means,
+    ```javascript
+    function foo(arg) {
+        window.bar = "this is a hidden global variable";
+    }
+    ```
+
+    **`'use strict';`** 
+    at the beginning of js files, make prevent this kind of mistakes
+
+2. Forgotten timers or callbacks
+
+
+3. out of DOM references
+4. Closures
 
 ## References ##
 - [Memory Management](https://developer.mozilla.org/ko/docs/Web/JavaScript/Memory_Management)
