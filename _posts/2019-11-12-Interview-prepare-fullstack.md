@@ -6,6 +6,9 @@ tag:
   - Interview
   - coding test
   - Javascript
+toc: true
+toc_label: "Table of contents"
+toc_icon: "file-alt"
 ---
 
 Interview preparation for fullstack engineer
@@ -155,12 +158,12 @@ Rotate the image by 90 degrees (clockwise).
 
 **Matrix rotation**
 
-*clockwise*
+***clockwise***
 
 - swap a[i][j] to a[j][i]
 - reverse up to down
 
-*anticlockwise*
+***anticlockwise***
 
 - reverse left to right
 - swap a[i][j] to a[j][i]
@@ -209,4 +212,96 @@ var rotateAntiClockwise = function(matrix) {
     return matrix;
 };
 ```
+</details>
+
+### Binary Tree Level Order Traversal
+
+Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+
+```
+For example:
+Given binary tree [3,9,20,null,null,15,7],
+    3
+   / \
+  9  20
+    /  \
+   15   7
+return its level order traversal as:
+[
+  [3],
+  [9,20],
+  [15,7]
+]
+```
+
+***BFS***
+
+- recursion with index
+- itself -> left child -> right child (inorder) traversal
+
+<details><summary> Answer here!</summary>
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number[][]}
+ */
+var levelOrder = function(root) {
+    let map = new Map();
+    let traversal = function(depth, node) {
+        if (node === null)
+          return;
+        if (!map.has(depth)) {
+            map.set(depth, [node.val]);
+        } else {
+            let data = map.get(depth);
+            data.push(node.val);
+            map.set(depth, data);
+        }
+        if (node.left !== null)
+            traversal(depth +1, node.left);
+        if (node.right !== null)
+            traversal(depth +1, node.right);
+    }
+    traversal(0, root);
+    let result = [];
+    for (let item of map) {
+        result.push(item[1]);
+    }
+    return result;
+};
+```
+</details>
+
+***DFS***
+
+- access node's value, then read left child's and last right child
+
+<details><summary> Answer here!</summary>
+
+```js 
+var dfsOrder = function(root) {
+    let result = [];
+    let traversal = function(node) {
+        if (node === null)
+            return;
+        result.push(node.val);
+        if (node.left !== null)
+            traversal(node.left);
+        if (node.right !== null)
+            traversal(node.right);
+    }
+    traversal(root)
+    
+    //return result;
+};
+```
+
 </details>
