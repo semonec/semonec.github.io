@@ -305,3 +305,47 @@ var dfsOrder = function(root) {
 ```
 
 </details>
+
+### Group Anagrams
+
+Given an array of strings, group anagrams together.
+
+**Example:**
+
+```
+Input: ["eat", "tea", "tan", "ate", "nat", "bat"],
+Output:
+[
+  ["ate","eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+```
+
+<details><summary> Answer here!</summary>
+
+```js
+/**
+ * @param {string[]} strs
+ * @return {string[][]}
+ */
+var groupAnagrams = function(strs) {
+    
+    let anagrams = {};
+    strs.forEach(str => {
+        let key = str.split('').sort().join('');
+        if (!anagrams[key]) {
+            anagrams[key] = [str];
+        } else {
+            anagrams[key] = anagrams[key].concat(str);
+        }
+    })
+    let result = [];
+    for (let key in anagrams) {
+        result.push(anagrams[key]);
+    }
+    return result;
+};
+```
+
+</details>
