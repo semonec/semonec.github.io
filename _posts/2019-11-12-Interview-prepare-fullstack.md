@@ -349,3 +349,47 @@ var groupAnagrams = function(strs) {
 ```
 
 </details>
+
+### Unique Paths
+
+A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+
+The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+
+How many possible unique paths are there?
+
+**DP**
+
+tried backtracking but costs too much.
+
+*DP[i][j] = DP[i][j-1] + DP[i-1][j]*
+```
+Input: m = 3, n = 2
+Output: 3
+Explanation:
+From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
+1. Right -> Right -> Down
+2. Right -> Down -> Right
+3. Down -> Right -> Right
+```
+
+<details><summary> Answer here!</summary>
+
+```js
+/**
+ * @param {number} m
+ * @param {number} n
+ * @return {number}
+ */
+var uniquePaths = function(m, n) {
+    let dp = new Array(m+1).fill(1).map(x => new Array(n+1).fill(0));
+    for (let i=1;i<=m;i++) {
+        for (let j=1;j<=n;j++) {
+            if (i==1 && j==1) dp[i][j] = 1;
+            else dp[i][j] = dp[i-1][j] + dp[i][j-1];
+        }
+    }
+    return dp[m][n];
+};
+```
+</details>
