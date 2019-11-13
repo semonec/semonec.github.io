@@ -23,6 +23,8 @@ Interview preparation for fullstack engineer
 - cheap set, get
 - gaurantee element's order
 
+<details><summary> Answer here!</summary>
+
 ```javascript
 // should I have to return first non duplicated char?
 // or shoulh I have to return all the non duplicated char list
@@ -53,13 +55,16 @@ function getNonDuplicateChar(str: string) {
 
 console.log(getNonDuplicateChar('geeksforgeeks'));
 ```
+</details>
 
 ### Given an array of numbers, arrange them in a way that yields the largest value. For example, if the given numbers are {54, 546, 548, 60}, the arrangement 6054854654 gives the largest value. And if the given numbers are {1, 34, 3, 98, 9, 76, 45, 4}, then the arrangement 998764543431 gives the largest value.
 
-**sort by value***
+**sort by value**
 
 - compare two element, concat each values and then compare it's value
 - sorted by order and then combine sorted list
+
+<details><summary> Answer here!</summary>
 
 ```javascript
 /*
@@ -77,6 +82,7 @@ function getLargeestNumber(list) {
 
 console.log(getLargeestNumber(["1", "34", "3", "98", "9", "76", "45", "4"]));
 ```
+</details>
 
 ### Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
 ### The same repeated number may be chosen from candidates unlimited number of times.
@@ -104,13 +110,15 @@ A solution set is:
 - pop stack
 - if result meets requirements, then return stack
 
+<details><summary> Answer here!</summary>
+
 ```javascript
 /**
  * @param {number[]} candidates
  * @param {number} target
  * @return {number[][]}
  */
-var combinationSum = function(candidates, target) {
+function combinationSum(candidates, target) {
     candidates.sort((a,b) => a-b);
     let buffer = [];
     let result = [];
@@ -136,3 +144,69 @@ var combinationSum = function(candidates, target) {
     }
 };
 ```
+</details>
+
+### Rotate Image
+
+You are given an n x n 2D matrix representing an image.
+
+Rotate the image by 90 degrees (clockwise).
+
+
+**Matrix rotation**
+
+*clockwise*
+
+- swap a[i][j] to a[j][i]
+- reverse up to down
+
+*anticlockwise*
+
+- reverse left to right
+- swap a[i][j] to a[j][i]
+
+<details><summary> Answer here!</summary>
+
+```javascript
+/**
+ * @param {number[][]} matrix
+ * @return {void} Do not return anything, modify matrix in-place instead.
+ */
+var rotate = function(matrix) {
+    
+    // reverse top to bottom
+    for (let i = 0, j = matrix.length -1; i < j; i++, j--) {
+        for (let k = 0; k < matrix[i].length; k++) {
+            let tmp = matrix[i][k];
+            matrix[i][k] = matrix[j][k];
+            matrix[j][k] = tmp;
+        }
+    }
+    
+    // symmetric change
+    for (let i = 0; i < matrix.length; i++ ) {
+        for (let j = i+1; j < matrix[i].length; j++) {
+            let tmp = matrix[i][j];
+            matrix[i][j] = matrix[j][i];
+            matrix[j][i] = tmp;
+        }
+    }
+    return matrix;
+};
+
+var rotateAntiClockwise = function(matrix) {
+    matrix.forEach(row => {
+        row = row.reverse();
+    });    
+    // symmetric change
+    for (let i = 0; i < matrix.length; i++ ) {
+        for (let j = i+1; j < matrix[i].length; j++) {
+            let tmp = matrix[i][j];
+            matrix[i][j] = matrix[j][i];
+            matrix[j][i] = tmp;
+        }
+    }
+    return matrix;
+};
+```
+</details>
