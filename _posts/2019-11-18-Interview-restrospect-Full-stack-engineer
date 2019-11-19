@@ -1,0 +1,71 @@
+---
+title:  "Interview retrospect - Fullstack Engineer"
+date:   2019-11-05 12:49:00 +0900
+categories: Interview
+tag:
+  - Interview
+  - coding test
+  - Javascript
+---
+
+## Questions ##
+
+Background of my careers
+
+With in the experiences
+
+- What was the hardest problem to you
+- React-thunk's pros & cons
+- backend msa and RabbitMQ, MQ's pros and cons, about scalable
+
+Backend Questions
+
+
+## Coding exercise ##
+
+1. Find singular one
+
+Given array, from 0 to n, each numbers are sorted, and except one value, all of the others duplicated twice.
+
+find one.
+
+- answsered with O(n), but it wasn't
+- O(logN) needed
+- divide and conquer algorithm
+
+```javascript
+let arr = [0,0,1,1,2,3,3];
+
+function search(arr, low, high) {
+    if(low > high) 
+        return; 
+    if(low == high) 
+    { 
+        console.log("The required element is "+arr[low]); 
+        return; 
+    } 
+        
+    // Find the middle point 
+    let mid = Math.floor((low + high)/2); 
+        
+    // If mid is even and element next to mid is 
+    // same as mid, then output element lies on 
+    // right side, else on left side 
+    if(mid % 2 == 0) 
+    { 
+        if(arr[mid] == arr[mid+1]) 
+            search(arr, mid+2, high); 
+        else
+            search(arr, low, mid); 
+    } 
+    // If mid is odd 
+    else if(mid % 2 == 1) 
+    { 
+        if(arr[mid] == arr[mid-1]) 
+            search(arr, mid+1, high); 
+        else
+            search(arr, low, mid-1); 
+    } 
+}
+console.log(search(arr,0, arr.length-1));
+```
