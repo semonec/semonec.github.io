@@ -56,3 +56,11 @@ function getDepthOfGraph(arr) {
 	// return with max depth
 }
 ```
+
+technical backgrounds
+
+- how chromium works
+- how renderprocesses will communicate
+- pros of css grid layout
+- c++ memory management in multi thread -> answered as mutex, critical section.
+
