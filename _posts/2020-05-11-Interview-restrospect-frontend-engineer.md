@@ -94,7 +94,15 @@ let mergeArray = (a,b) => {
 
 ## technical backgrounds
 
-- how chromium works
-- how renderprocesses will communicate
-- pros of css grid layout
-- c++ memory management in multi thread -> answered as mutex, critical section.
+- Reducing the loading
+  - Remove image resources, and replace it to svg
+  - put splash screen and while in the splash, execute script and loading resources
+    - don't reduce actual loading time, but the user feels quite differently.
+  - for the huge list, load seperatly, display the first few items first after it loaded and load another items
+- The way to analysis loading
+  - Chrome inspector
+  - Record timeline from loading to loaded, and check function's execution time, and compare with the logic, to find the bottle neck situation
+  - After find the bottleneck, split it's logic to resolve bottleneck.
+- Have you ever used ssr?
+  - no csr only, ssr for personal study, with next.js
+
